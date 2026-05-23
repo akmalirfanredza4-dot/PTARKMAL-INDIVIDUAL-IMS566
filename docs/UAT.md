@@ -1,14 +1,16 @@
-# User Acceptance Test (UAT) - PTARKMAL GitHub Pages Version
+# User Acceptance Test (UAT) - PTARKMAL Library Management System
 
-| Test ID | Test Scenario | Steps | Expected Result | Status |
-|---|---|---|---|---|
-| UAT-01 | Admin login success | Open login page, enter admin / 1234, click Login | Admin is redirected to dashboard | Pass |
-| UAT-02 | User login success | Open login page, enter student / 1234, click Login | User is redirected to dashboard | Pass |
-| UAT-03 | Invalid login | Enter wrong username or password | Error message appears | Pass |
-| UAT-04 | Responsive navigation | Open site on mobile width | Navigation collapses into mobile menu | Pass |
-| UAT-05 | Dashboard charts | Login and open dashboard | Book Status and Monthly Borrowing charts display | Pass |
-| UAT-06 | Book catalog | Open Books page | Eight custom books display with title, author, category, status, and description | Pass |
-| UAT-07 | Admin-only users page | Login as admin and open Users page | User table displays | Pass |
-| UAT-08 | User restricted from admin report | Login as student and try reports page | User is redirected to dashboard | Pass |
-| UAT-09 | Borrowing records | Open Borrowings page after login | Borrowing table displays | Pass |
-| UAT-10 | Logout | Click Logout | Session is removed and user returns to home page | Pass |
+| Test ID | Module | Test Scenario | Test Steps | Expected Result | Status |
+|---|---|---|---|---|---|
+| UAT01 | Authentication | Admin login | Enter admin username and password, click Login | Admin is redirected to admin dashboard | Pass |
+| UAT02 | Authentication | Invalid login | Enter wrong username/password | Error message is displayed | Pass |
+| UAT03 | Registration | New user registration | Fill name, email, and password | Account is created and user can login | Pass |
+| UAT04 | Navigation | Responsive menu | Open system on desktop and mobile screen | Menu remains usable and consistent | Pass |
+| UAT05 | Dashboard | Admin dashboard visual summary | Login as admin and open dashboard | Summary cards, pie chart, and bar chart appear | Pass |
+| UAT06 | Data View | Admin book inventory | Open Books page | Books appear in a structured table | Pass |
+| UAT07 | Data View | User catalog | Login as user and open catalog | Books appear in responsive cards | Pass |
+| UAT08 | Borrowing | Borrow available book | User clicks Borrow for available book | Record is created and quantity decreases | Pass |
+| UAT09 | Borrowing | Return borrowed book | Admin clicks Mark Returned | Status changes to returned and quantity increases | Pass |
+| UAT10 | Reports | View meaningful charts | Admin opens Reports | Category and top borrowed charts appear | Pass |
+| UAT11 | Responsiveness | Mobile display | Resize browser or test phone view | Layout adapts without broken navigation | Pass |
+| UAT12 | Content Management | Footer and metadata | Inspect page structure | Footer, titles, metadata, and organised sections exist | Pass |
